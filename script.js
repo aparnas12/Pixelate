@@ -31,8 +31,15 @@ function colorize(event) {
         }
         else{
             tdCell.className ='red';
-        }
-   
+        }  
 };
+
+const selectColor = document.getElementsByTagName('select');
+
+selectColor.addEventListener('change', (event) => {chooseColor(event)});
+
+function chooseColor (event) {
+    console.log(event.target.value);
+}
 
 
