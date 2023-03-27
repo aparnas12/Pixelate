@@ -5,8 +5,10 @@ function makeRow () {
     for (let i = 0; i < 20; i++) {
     const td = document.createElement('td');
     tr.appendChild(td);
-    return tr;
+    pixelTable.appendChild(tr);
 }
-let newRow = makeRow();
-    pixelTable.appendChild(newRow);
-}
+
+} 
+makeRow ();
+makeRow ();
+makeRow ();
