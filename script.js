@@ -16,3 +16,8 @@ makeRow();
 const rowButton = document.getElementById("add-row");
 
 rowButton.addEventListener('click',() => {makeRow()});
+
+pixelTable.addEventListener('click',(event) => {colorize(event)});
+function colorize(event) {
+    console.log('clicked')
+};
